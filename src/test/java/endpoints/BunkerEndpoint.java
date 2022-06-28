@@ -32,12 +32,13 @@ public class BunkerEndpoint {
                 .post();
     }
 
-    public Response authWrongPath() {
+    public Response authCustomBody(String body) {
         return given()
                 .spec(rSpec)
+                .body(body)
                 .when()
-                .contentType(ContentType.JSON)
-                .post("/123");
+                .post();
     }
+
 
 }

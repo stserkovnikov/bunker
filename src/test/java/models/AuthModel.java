@@ -3,17 +3,9 @@ package models;
 public class AuthModel {
     private String login;
     private String password;
-
+    @SuppressWarnings("unused")
     public String getLogin() {
         return login;
-    }
-
-    public AuthModel(String login, String password) {
-        this.login = login;
-        this.password = password;
-    }
-
-    public AuthModel() {
     }
 
     public AuthModel setLogin(String login) {
@@ -21,6 +13,7 @@ public class AuthModel {
         return this;
     }
 
+    @SuppressWarnings("unused")
     public String getPassword() {
         return password;
     }
